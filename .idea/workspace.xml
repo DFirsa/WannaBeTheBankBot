@@ -1,40 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00cf6887-27f4-49e1-ad25-a0677e477cc0" name="Default Changelist" comment="" />
+    <list default="true" id="06c6727f-dc12-44d7-8bd9-52cfa468a650" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CBDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Checker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Checker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CBTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CBTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1dzlsoh1c9BTeGmNuHGIDDCuqXM" />
+  <component name="ProjectId" id="1dzmclLZWHMGe5ppjWVym5l185K" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ClientServer" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="JUnit.CBTests">
+    <configuration name="Bot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Bot" />
+      <module name="WannaBeTheBankBot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CBTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WannaBeTheBankBot" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CBTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CBTests.parseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WannaBeTheBankBot" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CBTests" />
+      <option name="METHOD_NAME" value="parseTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WannaBeTheBankBot []" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.WannaBeTheBankBot []" />
+      <item itemvalue="Application.Bot" />
+      <item itemvalue="JUnit.CBTests.parseTest" />
+      <item itemvalue="JUnit.CBTests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CBTests" />
+        <item itemvalue="JUnit.CBTests.parseTest" />
+        <item itemvalue="Application.Bot" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="00cf6887-27f4-49e1-ad25-a0677e477cc0" name="Default Changelist" comment="" />
-      <created>1593436011290</created>
+      <changelist id="06c6727f-dc12-44d7-8bd9-52cfa468a650" name="Default Changelist" comment="" />
+      <created>1593436377811</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1593436011290</updated>
-      <workItem from="1593436016367" duration="326000" />
+      <updated>1593436377811</updated>
+      <workItem from="1593436384779" duration="5702000" />
+      <workItem from="1593521449839" duration="13884000" />
     </task>
     <servers />
   </component>
@@ -42,13 +132,53 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="294" key="FileChooserDialogImpl" timestamp="1593436342084">
+    <state x="586" y="218" key="#Inspections" timestamp="1593437036892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="294" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593436342084" />
-    <state x="342" y="114" key="new project wizard" timestamp="1593436316339">
+    <state x="586" y="218" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1593437036892" />
+    <state x="440" y="114" key="#Project_Structure" timestamp="1593535064713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="114" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1593436316339" />
+    <state x="440" y="114" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1593535064713" />
+    <state x="404" y="210" width="1093" height="691" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593523835574">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="404" y="210" width="1093" height="691" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593523835574" />
+    <state x="140" y="527" width="1720" height="878" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1593536411102">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="140" y="527" width="1720" height="878" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593536411102" />
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1593523359653">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593523359653" />
+    <state x="790" y="139" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1593526773181">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="139" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593526773181" />
+    <state width="1876" height="333" key="GridCell.Tab.0.bottom" timestamp="1593536413278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593536413278" />
+    <state width="1876" height="333" key="GridCell.Tab.0.center" timestamp="1593536413278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="333" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593536413278" />
+    <state width="1876" height="333" key="GridCell.Tab.0.left" timestamp="1593536413278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="333" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593536413278" />
+    <state width="1876" height="333" key="GridCell.Tab.0.right" timestamp="1593536413278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="333" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593536413278" />
+    <state x="440" y="114" key="SettingsEditor" timestamp="1593526777755">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="114" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593526777755" />
+    <state x="664" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593526766017">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="664" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1593526766017" />
   </component>
 </project>
