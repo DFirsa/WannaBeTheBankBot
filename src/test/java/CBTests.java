@@ -8,7 +8,7 @@ public class CBTests {
 
     @Test
     public void parseTest() throws IOException {
-        String expected = "Курс ЦБ РФ\n" +
+        String expected = "Курс ЦБ РФ на 22/05/2020\n" +
                 "GBP : 86.5556\n" +
                 "USD : 70.924\n" +
                 "EUR : 77.7965\n" +
@@ -20,7 +20,7 @@ public class CBTests {
 
     @Test
     public void loseParseTest() throws IOException {
-        String expected = "Курс ЦБ РФ\n" +
+        String expected = "Курс ЦБ РФ на 22/05/2020\n" +
                 "GBP : 86.3619\n" +
                 "USD : 69.9513\n" +
                 "EUR : 78.6812\n" +

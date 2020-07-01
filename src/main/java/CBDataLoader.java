@@ -11,18 +11,18 @@ public class CBDataLoader {
 
     public static String getRate(String date) throws IOException {
         Document doc = Jsoup.connect(urlPattern + date).get();
-        Elements valutes = doc.select("Valute");
+        Elements currencies = doc.select("Valute");
 
         String result = "";
-        for (Element el : valutes){
-            String valute = el.select("CharCode").text();
-            if(Checker.hasValute(valute)){
+        for (Element el : currencies){
+            String currency = el.select("CharCode").text();
+            if(Checker.hasValute(currency)){
                 double nominal = Double.valueOf(el.select("Nominal").text());
                 double value = Double.valueOf(el.select("Value").text().replace(',','.'));
-                result += valute + " : " + value / nominal + "\n";
+                result += currency + " : " + value / nominal + "\n";
             }
         }
 
-        return "Курс ЦБ РФ\n" + result;
+        return "Курс ЦБ РФ на " + date + "\n" + result;
     }
 }
