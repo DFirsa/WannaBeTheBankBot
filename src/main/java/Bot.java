@@ -8,13 +8,18 @@ import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 import org.telegram.telegrambots.exceptions.TelegramApiRequestException;
 
-import java.io.IOException;
+import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Bot extends TelegramLongPollingBot {
 
     public static void main(String[] args) {
+        try {
+            loadCurrencies();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         ApiContextInitializer.init();
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
         try{
@@ -28,7 +33,6 @@ public class Bot extends TelegramLongPollingBot {
         SendMessage sendMessage = new SendMessage();
         sendMessage.enableMarkdown(true);
         sendMessage.setChatId(message.getChatId().toString());
-//        sendMessage.setReplyToMessageId(message.getMessageId());
         sendMessage.setText(text);
         try{
             sendMessage(sendMessage);
@@ -59,5 +63,16 @@ public class Bot extends TelegramLongPollingBot {
         Date date = new java.util.Date(unixSeconds*1000L);
         SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd/MM/yyyy");
         return sdf.format(date);
+    }
+
+    private static void loadCurrencies() throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(new File("./src/main/resources/currencies.txt")));
+
+        String line = reader.readLine();
+        while (line != null){
+            Checker.currencies.add(line);
+            BankRatesParser.currencies.add(line);
+            line = reader.readLine();
+        }
     }
 }

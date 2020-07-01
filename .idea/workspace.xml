@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06c6727f-dc12-44d7-8bd9-52cfa468a650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/BankRatesParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/currencies" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/help.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BankRatesParserTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CBDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BankRatesParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BankRatesParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Checker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Checker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Banks.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Banks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CBTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CBTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/currencies" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +48,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.BankRatesParser">
+  <component name="RunManager" selected="JUnit.BankRatesParserTests.parseLessThenFiveTest">
     <configuration name="BankRatesParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BankRatesParser" />
       <module name="WannaBeTheBankBot" />
@@ -60,21 +63,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BankRatesParserTests.parseLessThenFiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WannaBeTheBankBot" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankRatesParserTests" />
+      <option name="METHOD_NAME" value="parseLessThenFiveTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankRatesParserTests.parseManyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WannaBeTheBankBot" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BankRatesParserTests" />
+      <option name="METHOD_NAME" value="parseManyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CBTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WannaBeTheBankBot" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CBTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CBTests.parseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WannaBeTheBankBot" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CBTests" />
-      <option name="METHOD_NAME" value="parseTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,17 +117,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Bot" />
-      <item itemvalue="JUnit.CBTests.parseTest" />
       <item itemvalue="JUnit.CBTests" />
       <item itemvalue="Maven.WannaBeTheBankBot []" />
       <item itemvalue="Application.BankRatesParser" />
+      <item itemvalue="JUnit.BankRatesParserTests.parseManyTest" />
+      <item itemvalue="JUnit.BankRatesParserTests.parseLessThenFiveTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BankRatesParserTests.parseLessThenFiveTest" />
+        <item itemvalue="JUnit.BankRatesParserTests.parseManyTest" />
+        <item itemvalue="Application.Bot" />
         <item itemvalue="Application.BankRatesParser" />
         <item itemvalue="JUnit.CBTests" />
-        <item itemvalue="JUnit.CBTests.parseTest" />
-        <item itemvalue="Application.Bot" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +145,7 @@
       <updated>1593436377811</updated>
       <workItem from="1593436384779" duration="5702000" />
       <workItem from="1593521449839" duration="16603000" />
-      <workItem from="1593598460839" duration="7020000" />
+      <workItem from="1593598460839" duration="13155000" />
     </task>
     <servers />
   </component>
@@ -166,38 +181,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="139" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593526773181" />
-    <state width="1876" height="333" key="GridCell.Tab.0.bottom" timestamp="1593607702355">
+    <state width="1876" height="257" key="GridCell.Tab.0.bottom" timestamp="1593615756255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593607702355" />
-    <state width="1876" height="333" key="GridCell.Tab.0.center" timestamp="1593607702355">
+    <state width="1876" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593615756255" />
+    <state width="1876" height="257" key="GridCell.Tab.0.center" timestamp="1593615756255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="333" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593607702355" />
-    <state width="1876" height="333" key="GridCell.Tab.0.left" timestamp="1593607702355">
+    <state width="1876" height="257" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593615756255" />
+    <state width="1876" height="257" key="GridCell.Tab.0.left" timestamp="1593615756255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="333" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593607702355" />
-    <state width="1876" height="333" key="GridCell.Tab.0.right" timestamp="1593607702355">
+    <state width="1876" height="257" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593615756255" />
+    <state width="1876" height="257" key="GridCell.Tab.0.right" timestamp="1593615756255">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="333" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593607702355" />
-    <state width="1876" height="384" key="GridCell.Tab.1.bottom" timestamp="1593607630940">
+    <state width="1876" height="257" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593615756255" />
+    <state width="1876" height="384" key="GridCell.Tab.1.bottom" timestamp="1593612603147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="384" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593607630940" />
-    <state width="1876" height="384" key="GridCell.Tab.1.center" timestamp="1593607630940">
+    <state width="1876" height="384" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593612603147" />
+    <state width="1876" height="384" key="GridCell.Tab.1.center" timestamp="1593612603147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="384" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593607630940" />
-    <state width="1876" height="384" key="GridCell.Tab.1.left" timestamp="1593607630940">
+    <state width="1876" height="384" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593612603147" />
+    <state width="1876" height="384" key="GridCell.Tab.1.left" timestamp="1593612603147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="384" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593607630940" />
-    <state width="1876" height="384" key="GridCell.Tab.1.right" timestamp="1593607630940">
+    <state width="1876" height="384" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593612603147" />
+    <state width="1876" height="384" key="GridCell.Tab.1.right" timestamp="1593612603147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="384" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593607630940" />
+    <state width="1876" height="384" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593612603147" />
     <state x="440" y="114" key="SettingsEditor" timestamp="1593540705878">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
