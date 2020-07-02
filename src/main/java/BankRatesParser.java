@@ -22,7 +22,7 @@ public class BankRatesParser {
                 Elements info = el.select("td.bank_name > a");
                 String data = info.text() + "\n";
                 data += "Покупка : " + el.select("td:nth-child(2)").text() + "\nПродажа : "
-                        + el.select("td:nth-child(3)").text() + "\n\n";
+                        + el.select("td:nth-child(2)").text() + "\n\n";
                 result += data;
                 counter++;
             }
