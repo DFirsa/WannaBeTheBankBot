@@ -1,10 +1,9 @@
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.google.gson.stream.JsonReader;
-import javafx.scene.layout.Pane;
-import org.telegram.telegrambots.api.methods.send.SendMessage;
+import myEx.groupNoInputInfoException;
+import myEx.haveNoTextException;
 import org.telegram.telegrambots.api.objects.Message;
-import org.telegram.telegrambots.exceptions.TelegramApiException;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
@@ -56,7 +55,7 @@ public class InputProcessor {
                 new TypeToken<HashMap<String, String>>(){}.getType());
     }
 
-    public static String handleInput(Message message) throws IOException {
+    public static String handleInput(Message message) throws IOException, haveNoTextException, groupNoInputInfoException {
             if (message.hasText()){
                 String[] words = message.getText().split("\\s+");
                 boolean isSearch = false;
@@ -70,6 +69,11 @@ public class InputProcessor {
 
                     if (word.equals("/help")){
                         //TODO help
+                    }
+
+                    if(word.equals("/start")){
+                        return "Привет, я бот для вывода информации о курсах валют," +
+                                " если хочешь узнать как я работаю просто напиши /help";
                     }
 
                     if(enteredRegion.isEmpty()) enteredRegion = getRegion(word);
@@ -91,7 +95,7 @@ public class InputProcessor {
                                 return BankRatesParser.getRatesByCurrency(region, currency,
                                         "?sort=buy_course_19", true);
                             if(i == words.length - 1){
-                                if(enteredRegion.isEmpty()) return BankRatesParser.getRatesByCurrency(region, currency,
+                                if(enteredRegion.isEmpty() && !currency.isEmpty()) return BankRatesParser.getRatesByCurrency(region, currency,
                                         "?sort=buy_course_19", true);
                                 return BankRatesParser.getRatesByCity(region);
                             }
@@ -100,6 +104,8 @@ public class InputProcessor {
                     }
                 }
             }
+            else if(!message.isGroupMessage())throw new haveNoTextException();
+            if(message.isGroupMessage()) throw new groupNoInputInfoException();
             return "Не достаточно информации для вывода информации";
     }
 

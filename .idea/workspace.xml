@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06c6727f-dc12-44d7-8bd9-52cfa468a650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/InputProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/CBPatterns.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/currenciesPattern.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/patterns/searchPattern.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/InputProcessorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myEx/groupNoInputInfoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myEx/haveNoTextException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BankRatesParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BankRatesParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CBDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CBDataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Banks.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/patterns/Banks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BankRatesParserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BankRatesParserTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CBTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CBTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InputProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +150,7 @@
       <workItem from="1593436384779" duration="5702000" />
       <workItem from="1593521449839" duration="16603000" />
       <workItem from="1593598460839" duration="15535000" />
-      <workItem from="1593683217717" duration="18704000" />
+      <workItem from="1593683217717" duration="22501000" />
     </task>
     <servers />
   </component>
@@ -193,38 +186,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="790" y="139" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593526773181" />
-    <state width="1876" height="278" key="GridCell.Tab.0.bottom" timestamp="1593704859252">
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593708032567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593704859252" />
-    <state width="1876" height="278" key="GridCell.Tab.0.center" timestamp="1593704859252">
+    <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593708032567" />
+    <state width="1876" height="278" key="GridCell.Tab.0.bottom" timestamp="1593709794183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593704859252" />
-    <state width="1876" height="278" key="GridCell.Tab.0.left" timestamp="1593704859252">
+    <state width="1876" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593709794183" />
+    <state width="1876" height="278" key="GridCell.Tab.0.center" timestamp="1593709794183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593704859252" />
-    <state width="1876" height="278" key="GridCell.Tab.0.right" timestamp="1593704859252">
+    <state width="1876" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593709794183" />
+    <state width="1876" height="278" key="GridCell.Tab.0.left" timestamp="1593709794183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593704859252" />
-    <state width="1876" height="384" key="GridCell.Tab.1.bottom" timestamp="1593704600141">
+    <state width="1876" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593709794183" />
+    <state width="1876" height="278" key="GridCell.Tab.0.right" timestamp="1593709794183">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="384" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593704600141" />
-    <state width="1876" height="384" key="GridCell.Tab.1.center" timestamp="1593704600141">
+    <state width="1876" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593709794183" />
+    <state width="1876" height="384" key="GridCell.Tab.1.bottom" timestamp="1593709282657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="384" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593704600141" />
-    <state width="1876" height="384" key="GridCell.Tab.1.left" timestamp="1593704600141">
+    <state width="1876" height="384" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593709282657" />
+    <state width="1876" height="384" key="GridCell.Tab.1.center" timestamp="1593709282657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="384" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593704600141" />
-    <state width="1876" height="384" key="GridCell.Tab.1.right" timestamp="1593704600141">
+    <state width="1876" height="384" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593709282657" />
+    <state width="1876" height="384" key="GridCell.Tab.1.left" timestamp="1593709282657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="384" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593704600141" />
+    <state width="1876" height="384" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593709282657" />
+    <state width="1876" height="384" key="GridCell.Tab.1.right" timestamp="1593709282657">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="384" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593709282657" />
     <state x="490" y="194" key="Maven.ArtifactSearchDialog" timestamp="1593688018578">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,4 +1,5 @@
-import org.telegram.telegrambots.ApiContext;
+import myEx.groupNoInputInfoException;
+import myEx.haveNoTextException;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
@@ -64,6 +65,14 @@ public class Bot extends TelegramLongPollingBot {
                 sendMsg(message, InputProcessor.handleInput(message));
             } catch (IOException e) {
                 e.printStackTrace();
+            } catch (haveNoTextException e) {
+                try {
+                    sendAttention(message);
+                } catch (TelegramApiException telegramApiException) {
+                    telegramApiException.printStackTrace();
+                }
+            } catch (groupNoInputInfoException e) {
+
             }
         }
     }

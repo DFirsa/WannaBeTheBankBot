@@ -50,7 +50,7 @@ public class BankRatesParser {
                 " div.content_i-head.content_i-head--datepicker-fix > div.wrapper-flex > div.wrapper-flex__title > h1");
 
         for (String valute: currencies){
-            result += getRatesByCurrency(city, valute, "", false);
+            result += getRatesByCurrency(city, valute, "?sort=buy_course_19", false);
         }
         return header.text() + ":\n\n" + result;
     }
