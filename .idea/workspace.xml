@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06c6727f-dc12-44d7-8bd9-52cfa468a650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/myEx/groupNoInputInfoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/myEx/haveNoTextException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/BankRatesParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BankRatesParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InputProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InputProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,12 +116,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Maven.WannaBeTheBankBot []" />
-      <item itemvalue="JUnit.InputProcessorTests.getRegionTest3" />
       <item itemvalue="Application.Bot" />
+      <item itemvalue="JUnit.InputProcessorTests.getRegionTest3" />
       <item itemvalue="JUnit.InputProcessorTests" />
       <item itemvalue="JUnit.BankRatesParserTests.parseManyTest" />
       <item itemvalue="JUnit.BankRatesParserTests" />
+      <item itemvalue="Maven.WannaBeTheBankBot []" />
     </list>
     <recent_temporary>
       <list>
@@ -190,22 +186,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593708032567" />
-    <state width="1876" height="278" key="GridCell.Tab.0.bottom" timestamp="1593709794183">
+    <state width="1876" height="278" key="GridCell.Tab.0.bottom" timestamp="1593714957985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593709794183" />
-    <state width="1876" height="278" key="GridCell.Tab.0.center" timestamp="1593709794183">
+    <state width="1876" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593714957985" />
+    <state width="1876" height="278" key="GridCell.Tab.0.center" timestamp="1593714957985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593709794183" />
-    <state width="1876" height="278" key="GridCell.Tab.0.left" timestamp="1593709794183">
+    <state width="1876" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593714957985" />
+    <state width="1876" height="278" key="GridCell.Tab.0.left" timestamp="1593714957985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593709794183" />
-    <state width="1876" height="278" key="GridCell.Tab.0.right" timestamp="1593709794183">
+    <state width="1876" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593714957985" />
+    <state width="1876" height="278" key="GridCell.Tab.0.right" timestamp="1593714957985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593709794183" />
+    <state width="1876" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593714957985" />
     <state width="1876" height="384" key="GridCell.Tab.1.bottom" timestamp="1593709282657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
