@@ -2,6 +2,7 @@ import org.telegram.telegrambots.ApiContext;
 import org.telegram.telegrambots.ApiContextInitializer;
 import org.telegram.telegrambots.TelegramBotsApi;
 import org.telegram.telegrambots.api.methods.send.SendMessage;
+import org.telegram.telegrambots.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.api.objects.Message;
 import org.telegram.telegrambots.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -14,9 +15,13 @@ import java.util.Date;
 
 public class Bot extends TelegramLongPollingBot {
 
+    private static final String attentionURL =
+            "https://i0.wp.com/angolenko.com.ua/news/wp-content/uploads/2019/06/original-4.png?fit=512%2C512&ssl=1";
+
     public static void main(String[] args) {
         try {
             loadCurrencies();
+            InputProcessor.load();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -34,6 +39,9 @@ public class Bot extends TelegramLongPollingBot {
         sendMessage.enableMarkdown(true);
         sendMessage.setChatId(message.getChatId().toString());
         sendMessage.setText(text);
+
+
+
         try{
             sendMessage(sendMessage);
         } catch (TelegramApiException e) {
@@ -41,14 +49,23 @@ public class Bot extends TelegramLongPollingBot {
         }
     }
 
+    private void sendAttention(Message message) throws TelegramApiException {
+        SendPhoto sendPhoto = new SendPhoto();
+        sendPhoto.setPhoto(attentionURL);
+        sendPhoto.setCaption("Дай текст!!!");
+        sendPhoto.setChatId(message.getChatId().toString());
+        sendPhoto(sendPhoto);
+    }
+
     public void onUpdateReceived(Update update) {
         Message message = update.getMessage();
-        if (message != null && message.hasText())
-            switch (message.getText()){
-                case "/help":
-                    break;
+        if (message != null) {
+            try {
+                sendMsg(message, InputProcessor.handleInput(message));
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-
+        }
     }
 
     public String getBotUsername() {
@@ -65,7 +82,7 @@ public class Bot extends TelegramLongPollingBot {
         return sdf.format(date);
     }
 
-    private static void loadCurrencies() throws IOException {
+    public static void loadCurrencies() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(new File("./src/main/resources/currencies.txt")));
 
         String line = reader.readLine();
@@ -74,5 +91,6 @@ public class Bot extends TelegramLongPollingBot {
             BankRatesParser.currencies.add(line);
             line = reader.readLine();
         }
+        reader.close();
     }
 }

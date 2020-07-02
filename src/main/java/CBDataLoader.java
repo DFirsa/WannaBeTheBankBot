@@ -23,6 +23,7 @@ public class CBDataLoader {
             }
         }
 
+        if (result.isEmpty()) return "Не верно указана дата";
         return "Курс ЦБ РФ на " + date + "\n" + result;
     }
 }

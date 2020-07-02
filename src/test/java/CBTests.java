@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import sun.tools.jar.Main;
 
 
 import java.io.IOException;
@@ -8,6 +9,7 @@ public class CBTests {
 
     @Test
     public void parseTest() throws IOException {
+        Bot.loadCurrencies();
         String expected = "Курс ЦБ РФ на 22/05/2020\n" +
                 "GBP : 86.5556\n" +
                 "USD : 70.924\n" +
@@ -30,5 +32,10 @@ public class CBTests {
         Assertions.assertFalse(expected.equals(actual));
     }
 
-    //TODO test for broken date
+    @Test
+    public void brokenDate() throws IOException {
+        String expected = "Не верно указана дата";
+        String actual = CBDataLoader.getRate("32/05/2020");
+        Assertions.assertEquals(expected, actual);
+    }
 }
