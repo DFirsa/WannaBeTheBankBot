@@ -11,9 +11,12 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 public class InputProcessor {
+
+    private static final Logger logger = Logger.getGlobal();
 
     private static LinkedList<String> cbPatterns;
     private static LinkedList<String> searchPatterns;
@@ -64,6 +67,8 @@ public class InputProcessor {
                 String date = "";
                 String enteredRegion = "";
 
+                boolean isLogged = false;
+
                 for (int i = 0; i < words.length; i++){
                     String word = words[i];
 
@@ -83,6 +88,10 @@ public class InputProcessor {
                     if(date.isEmpty()) date = getDate(word);
 
                     if(isCb){
+                        if(!isLogged){
+                            logger.info("Request: " + message.getText());
+                            isLogged = true;
+                        }
                         if(!date.isEmpty())
                             return CBDataLoader.getRate(date);
                         if(i == words.length - 1)
@@ -90,6 +99,10 @@ public class InputProcessor {
                     }
                     else {
                         if(isSearch || !currency.isEmpty()){
+                            if(!isLogged){
+                                logger.info("Request: "  + message.getText());
+                                isLogged = true;
+                            }
                             if(!enteredRegion.isEmpty()) region = enteredRegion;
                             if(!currency.isEmpty() && !enteredRegion.isEmpty())
                                 return BankRatesParser.getRatesByCurrency(region, currency,
