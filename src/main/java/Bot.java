@@ -13,25 +13,27 @@ import org.telegram.telegrambots.exceptions.TelegramApiRequestException;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Logger;
 
 public class Bot extends TelegramLongPollingBot {
 
     private static final String attentionURL =
             "https://i0.wp.com/angolenko.com.ua/news/wp-content/uploads/2019/06/original-4.png?fit=512%2C512&ssl=1";
+    private static final Logger logger = Logger.getGlobal();
 
     public static void main(String[] args) {
         try {
             loadCurrencies();
             InputProcessor.load();
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.warning("Lose data files");
         }
         ApiContextInitializer.init();
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
         try{
             telegramBotsApi.registerBot(new Bot());
         } catch (TelegramApiRequestException e) {
-            e.printStackTrace();
+            logger.warning("Error bot launching");
         }
     }
 
@@ -41,12 +43,10 @@ public class Bot extends TelegramLongPollingBot {
         sendMessage.setChatId(message.getChatId().toString());
         sendMessage.setText(text);
 
-
-
         try{
             sendMessage(sendMessage);
         } catch (TelegramApiException e) {
-            e.printStackTrace();
+            logger.warning("Error sending message");
         }
     }
 
@@ -64,16 +64,14 @@ public class Bot extends TelegramLongPollingBot {
             try {
                 sendMsg(message, InputProcessor.handleInput(message));
             } catch (IOException e) {
-                e.printStackTrace();
+                logger.warning("Error loading info from data files");
             } catch (haveNoTextException e) {
                 try {
                     sendAttention(message);
                 } catch (TelegramApiException telegramApiException) {
-                    telegramApiException.printStackTrace();
+                    logger.warning("Error sending attention message");
                 }
-            } catch (groupNoInputInfoException e) {
-
-            }
+            } catch (groupNoInputInfoException ignored){}
         }
     }
 
