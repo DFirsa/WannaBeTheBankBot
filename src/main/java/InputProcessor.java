@@ -73,7 +73,17 @@ public class InputProcessor {
                     String word = words[i];
 
                     if (word.equals("/help")){
-                        //TODO help
+                        String result = "";
+                        BufferedReader reader = new BufferedReader(new FileReader
+                                (new File("./src/main/resources/help.txt")));
+
+                        String line = reader.readLine();
+                        while (line != null){
+                            result += line + "\n";
+                            line = reader.readLine();
+                        }
+                        reader.close();
+                        return result;
                     }
 
                     if(word.equals("/start")){
