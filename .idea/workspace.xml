@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06c6727f-dc12-44d7-8bd9-52cfa468a650" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/botInfo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/help.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/patterns/CBPatterns.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/patterns/CBPatterns.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CBTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CBTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,11 +115,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.Bot" />
+      <item itemvalue="Application.TestRunner" />
       <item itemvalue="JUnit.BankRatesParserTests.parseManyTest" />
       <item itemvalue="JUnit.BankRatesParserTests" />
-      <item itemvalue="Maven.WannaBeTheBankBot []" />
-      <item itemvalue="Application.TestRunner" />
       <item itemvalue="JUnit.CBTests" />
+      <item itemvalue="Maven.WannaBeTheBankBot []" />
     </list>
     <recent_temporary>
       <list>
@@ -151,6 +149,7 @@
       <workItem from="1593788466574" duration="116000" />
       <workItem from="1593791680326" duration="44000" />
       <workItem from="1593873907630" duration="3690000" />
+      <workItem from="1593877796968" duration="289000" />
     </task>
     <servers />
   </component>

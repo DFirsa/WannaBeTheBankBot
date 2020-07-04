@@ -20,6 +20,8 @@ public class Bot extends TelegramLongPollingBot {
     private static final String attentionURL =
             "https://i0.wp.com/angolenko.com.ua/news/wp-content/uploads/2019/06/original-4.png?fit=512%2C512&ssl=1";
     private static final Logger logger = Logger.getGlobal();
+    private String key;
+    private String botName;
 
     public static void main(String[] args) {
         try {
@@ -76,17 +78,11 @@ public class Bot extends TelegramLongPollingBot {
     }
 
     public String getBotUsername() {
-        return "Wanna be the bank";
+        return botName;
     }
 
     public String getBotToken() {
-        return "1336671453:AAHXogwPaeTWD5hBOaFOrXNZsXxbpM8qD_k";
-    }
-
-    private String getDate(long unixSeconds){
-        Date date = new java.util.Date(unixSeconds*1000L);
-        SimpleDateFormat sdf = new java.text.SimpleDateFormat("dd/MM/yyyy");
-        return sdf.format(date);
+        return key;
     }
 
     public static void loadCurrencies() throws IOException {
@@ -98,6 +94,15 @@ public class Bot extends TelegramLongPollingBot {
             BankRatesParser.currencies.add(line);
             line = reader.readLine();
         }
+        reader.close();
+    }
+
+    private void loadSettings() throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(new File("./src/main/resources/botInfo.txt")));
+
+        String line = reader.readLine();
+        key = line;
+        botName = reader.readLine();
         reader.close();
     }
 }
