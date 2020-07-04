@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="06c6727f-dc12-44d7-8bd9-52cfa468a650" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Bot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,8 @@
       <workItem from="1593788466574" duration="116000" />
       <workItem from="1593791680326" duration="44000" />
       <workItem from="1593873907630" duration="3690000" />
-      <workItem from="1593877796968" duration="444000" />
+      <workItem from="1593877796968" duration="516000" />
+      <workItem from="1593879252890" duration="5787000" />
     </task>
     <servers />
   </component>
@@ -192,22 +192,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593791719851" />
-    <state width="1877" height="170" key="GridCell.Tab.0.bottom" timestamp="1593878222415">
+    <state width="1877" height="209" key="GridCell.Tab.0.bottom" timestamp="1593878312842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593878222415" />
-    <state width="1877" height="170" key="GridCell.Tab.0.center" timestamp="1593878222415">
+    <state width="1877" height="209" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593878312842" />
+    <state width="1877" height="209" key="GridCell.Tab.0.center" timestamp="1593878312842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593878222415" />
-    <state width="1877" height="170" key="GridCell.Tab.0.left" timestamp="1593878222415">
+    <state width="1877" height="209" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593878312842" />
+    <state width="1877" height="209" key="GridCell.Tab.0.left" timestamp="1593878312842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593878222415" />
-    <state width="1877" height="170" key="GridCell.Tab.0.right" timestamp="1593878222415">
+    <state width="1877" height="209" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593878312842" />
+    <state width="1877" height="209" key="GridCell.Tab.0.right" timestamp="1593878312842">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="170" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593878222415" />
+    <state width="1877" height="209" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593878312842" />
     <state width="1876" height="384" key="GridCell.Tab.1.bottom" timestamp="1593717166195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -228,10 +228,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="194" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593876121484" />
-    <state x="157" y="125" key="SettingsEditor" timestamp="1593877222871">
+    <state x="157" y="125" key="SettingsEditor" timestamp="1593879790584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="157" y="125" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593877222871" />
+    <state x="157" y="125" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593879790584" />
     <state x="664" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593877218556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
