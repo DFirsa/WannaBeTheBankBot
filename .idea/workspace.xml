@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06c6727f-dc12-44d7-8bd9-52cfa468a650" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/help.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/patterns/CBPatterns.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/patterns/CBPatterns.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CBTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CBTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,9 +49,16 @@
       <recent name="D:\Projects\WannaBeTheBankBot\src\main\resources\patterns" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Bot">
+  <component name="RunManager" selected="Application.TestRunner">
     <configuration name="Bot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Bot" />
+      <module name="WannaBeTheBankBot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestRunner" />
       <module name="WannaBeTheBankBot" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,21 +83,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputProcessorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CBTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WannaBeTheBankBot" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InputProcessorTests" />
+      <option name="MAIN_CLASS_NAME" value="CBTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="InputProcessorTests.getRegionTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="WannaBeTheBankBot" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InputProcessorTests" />
-      <option name="METHOD_NAME" value="getRegionTest3" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,19 +117,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Bot" />
-      <item itemvalue="JUnit.InputProcessorTests.getRegionTest3" />
-      <item itemvalue="JUnit.InputProcessorTests" />
       <item itemvalue="JUnit.BankRatesParserTests.parseManyTest" />
       <item itemvalue="JUnit.BankRatesParserTests" />
       <item itemvalue="Maven.WannaBeTheBankBot []" />
+      <item itemvalue="Application.TestRunner" />
+      <item itemvalue="JUnit.CBTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestRunner" />
+        <item itemvalue="JUnit.CBTests" />
         <item itemvalue="Application.Bot" />
         <item itemvalue="JUnit.BankRatesParserTests" />
         <item itemvalue="JUnit.BankRatesParserTests.parseManyTest" />
-        <item itemvalue="JUnit.InputProcessorTests" />
-        <item itemvalue="JUnit.InputProcessorTests.getRegionTest3" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +147,10 @@
       <workItem from="1593521449839" duration="16603000" />
       <workItem from="1593598460839" duration="15535000" />
       <workItem from="1593683217717" duration="22501000" />
-      <workItem from="1593776593514" duration="4470000" />
+      <workItem from="1593776593514" duration="4807000" />
+      <workItem from="1593788466574" duration="116000" />
+      <workItem from="1593791680326" duration="44000" />
+      <workItem from="1593873907630" duration="3690000" />
     </task>
     <servers />
   </component>
@@ -156,10 +158,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="586" y="218" key="#Inspections" timestamp="1593787411363">
+    <state x="586" y="218" key="#Inspections" timestamp="1593876057823">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="586" y="218" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1593787411363" />
+    <state x="586" y="218" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1593876057823" />
     <state x="440" y="114" key="#Project_Structure" timestamp="1593535064713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -180,30 +182,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="255" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593523359653" />
-    <state x="790" y="139" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1593787586415">
+    <state x="790" y="139" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1593877220073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="790" y="139" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593787586415" />
+    <state x="790" y="139" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593877220073" />
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593708032567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="286" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593708032567" />
-    <state width="1876" height="278" key="GridCell.Tab.0.bottom" timestamp="1593786889395">
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1593791719851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593786889395" />
-    <state width="1876" height="278" key="GridCell.Tab.0.center" timestamp="1593786889395">
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593791719851" />
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom" timestamp="1593877697008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593786889395" />
-    <state width="1876" height="278" key="GridCell.Tab.0.left" timestamp="1593786889395">
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593877697008" />
+    <state width="1877" height="256" key="GridCell.Tab.0.center" timestamp="1593877697008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593786889395" />
-    <state width="1876" height="278" key="GridCell.Tab.0.right" timestamp="1593786889395">
+    <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593877697008" />
+    <state width="1877" height="256" key="GridCell.Tab.0.left" timestamp="1593877697008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593786889395" />
+    <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593877697008" />
+    <state width="1877" height="256" key="GridCell.Tab.0.right" timestamp="1593877697008">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593877697008" />
     <state width="1876" height="384" key="GridCell.Tab.1.bottom" timestamp="1593717166195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -220,17 +226,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="384" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593717166195" />
-    <state x="490" y="194" key="Maven.ArtifactSearchDialog" timestamp="1593688018578">
+    <state x="490" y="194" key="Maven.ArtifactSearchDialog" timestamp="1593876121484">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="490" y="194" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593688018578" />
-    <state x="157" y="125" key="SettingsEditor" timestamp="1593787592101">
+    <state x="490" y="194" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593876121484" />
+    <state x="157" y="125" key="SettingsEditor" timestamp="1593877222871">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="157" y="125" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593787592101" />
-    <state x="664" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593787569533">
+    <state x="157" y="125" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593877222871" />
+    <state x="664" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593877218556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="664" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1593787569533" />
+    <state x="664" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1593877218556" />
+    <state x="342" y="94" key="new project wizard" timestamp="1593791723009">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="94" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1593791723009" />
   </component>
 </project>

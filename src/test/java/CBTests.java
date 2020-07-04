@@ -8,7 +8,7 @@ import java.io.IOException;
 public class CBTests {
 
     @Test
-    public void parseTest() throws IOException {
+    public void testParse() throws IOException {
         Bot.loadCurrencies();
         String expected = "Курс ЦБ РФ на 22/05/2020\n" +
                 "GBP : 86.5556\n" +
